@@ -1,0 +1,4 @@
+#Fri Dec 04 18:58:00 CST 2020
+base.0=/run/media/rafael/7e73cb8f-b6bb-4646-8e7c-053fca0ebf19/Proyctps/reactMobile/birthday/android/app/build/intermediates/dex/debug/mergeDexDebug/out/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
