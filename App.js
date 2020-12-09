@@ -4,17 +4,17 @@ import firebase from "./src/utils/firebase";
 import 'firebase/auth';
 
 export default function App(){
-   const [state, setstate] = useState(undefined)
+   const [user, setUser] = useState(undefined)
   useEffect(() => {
     firebase.auth().onAuthStateChanged((response) => {
-      console.log('Usuario logeado',response)
+     setUser(response);
     });
   }, []);
+  if (user===undefined) return null;
 
   return (
-    
       <SafeAreaView>
-     <Text>rafaeel</Text>
+       {user ?<Text>Estas logeado </Text> : <Text>No estas logeado</Text> }
       </SafeAreaView>
   );
 }
